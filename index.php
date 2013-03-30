@@ -10,7 +10,7 @@
 		</div>
 	</div>
 	
-	<div class="mechanism">
+	<div id="mechanism" class="mechanism">
 		<div class="back sky"></div>
 		<div class="back terrain"></div>
 		
@@ -52,6 +52,4 @@
 <h2>X: <span class="x"></span></h2>
 <h2>Z: <span class="z"></span></h2>
 
-<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script-->
-<script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/script.js"></script>
