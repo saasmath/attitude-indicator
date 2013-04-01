@@ -1,8 +1,63 @@
 .casing {
-	background: #1d1610;
+	background: #111 url('../img/metal.jpg') repeat;
+	border: 1px solid #aaa;
 	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
 	padding: 20px;
-	width: 300px;
+	height: 334px;
+	width: 334px;
+}
+.inner-case {
+	background: #222;
+	border: 2px solid #333;
+	border-radius: 165px;
+	box-shadow: 0 0 10px #000;
+	height: 300px;
+	overflow: hidden;
+	padding: 15px;
+}
+.case-control {
+	box-shadow: 0px 2px 0px #333;
+	border-bottom: 1px solid #555;
+	height: 230px;
+	overflow: hidden;
+}
+.panel {
+	box-shadow: 0 0 10px #111;
+	border-radius: 30px 30px 300px 300px;
+	background: #333;
+	color: #aaa;
+	font-family: Arial;
+	margin: 13px 0 0 55px;
+	width: 190px;
+	height: 40px;
+}
+.panel ul {
+	padding: 0;
+}
+.panel li {
+	list-style-type: none;
+	float: left;
+}
+.panel .labels li {
+	margin: 3px 8px;
+}
+.panel .labels li:nth-child(3) {
+	margin-left: 25px;
+}
+.panel .lights li {
+	background: #555;
+	border-radius: 10px;
+	height: 10px;
+	margin: 0 23px;
+	width: 10px;
+}
+.panel .lights li:nth-child(3) {
+	margin-left: 42px;
+}
+.panel .lights .on {
+	box-shadow: 0 0 8px #3f3;
+	background: #6f6;
 }
 .weight {
 	position: absolute;
@@ -19,7 +74,41 @@
 	height: 5px;
 }
 .up-chevron {
-
+	position: relative;
+	top: 50px;
+	left: 140px;
+}
+.up-chevron div {
+	background: #e98219;
+	border-radius: 5px;
+	box-shadow: 0 0 6px #000;
+	position: absolute;
+	width: 5px;
+}
+.up-chevron div:nth-child(1),
+.up-chevron div:nth-child(2) {
+	height: 35px;
+}
+.up-chevron div:nth-child(3) {
+	height: 25px;
+}
+.up-chevron div:nth-child(1) {
+	box-shadow: 2px 0px 2px #555;
+	-webkit-transform: rotate(-20deg);
+	top: 0;
+	left: 11px;
+}
+.up-chevron div:nth-child(2) {
+	box-shadow: -2px 0px 2px #555;
+	-webkit-transform: rotate(20deg);
+	top: 0;
+	left: 0;
+}
+.up-chevron div:nth-child(3) {
+	box-shadow: 2px 0px 2px #555;
+	-webkit-transform: rotate(90deg);
+	top: 19px;
+	left: 5px;
 }
 .left {
 	left: 80px;
@@ -169,11 +258,31 @@
 .ball .sky {
 	width: 200px;
 	height: 75px;
+	background-image: -webkit-linear-gradient(top, #558ebb, #9ccbe5);
 	border-radius: 100px 100px 0 0;
 	border-bottom: 2px solid #fff;
 }
 .ball .terrain {
 	width: 200px;
 	height: 75px;
+	background-image: -webkit-linear-gradient(top, #553a29, #3d2618);
 	border-radius: 0 0 100px 100px;
+}
+.cage-toggle {
+	background: #222;
+	border: 2px solid #333;
+	border-radius: 40px;
+	box-shadow: 0 0 10px #000;
+	color: #aaa;
+	font-family: Arial;
+	font-size: 10px;
+	height: 40px;
+	line-height: 13px;
+	left: 315px;
+	padding: 5px;
+	position: absolute;
+	top: 315px;
+	text-align: center;
+	-webkit-transform: rotate(-34deg);
+	width: 40px;
 }
